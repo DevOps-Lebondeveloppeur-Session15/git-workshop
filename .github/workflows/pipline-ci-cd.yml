@@ -9,6 +9,12 @@ jobs:
     job1:
         runs-on: ubuntu-latest
         steps:
+            - name: clone repo
+              uses: actions/checkout@v6
+
+            - name: list branch
+              run: git branch
+
             - run: mkdir folder1
 
             - name: list folders
